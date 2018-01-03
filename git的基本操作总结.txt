@@ -1,0 +1,26 @@
+1.git config（使用git命令之前，如何配置用户信息）
+2.git help config（如何使用帮助）
+3.git init（git初始化）
+4.git status（如何查看git管理状态）
+5.git add（如何跟踪文件）
+6.git commit（如何提交到版本库）
+7.git log（如何查看git的日志）
+8.暂存区（index/staging area），工作区（work area），本地版本库（local repository），远程版本库(remote repository)
+9.git管理下文件的生命周期，也就是文件的状态（用git status查看）
+10.$git branch testing//创建一个新的testing分支
+11.$git branch //查看所有的分支
+12.$git status//查看状态
+13.$git checkout testing//转换到新建的testing分支
+14.$nano index.html//修改index.html文件
+15.$git commit -am"自己的注释"//把修改后的提交到版本库
+16.$git checkout master//又切换到master分支
+
+例如：
+1.$mkdir mysite//创建一个名为mystie的目录
+2.$cd mysite//进入mysite目录
+3.$git init//git初始化
+4.$nano index.html//编译index.html文件
+5.$git add index.html//添加index.html文件到暂存区,跟踪并保存到暂存区
+6.$git add *.html//添加多个.html文件进暂存区
+7.$git commit -m "add hello word html"//把当前的文件添加到版本库中“注释”
+8.$git log//查看提交的信息

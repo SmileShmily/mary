@@ -1,0 +1,2 @@
+安装github时，需要把http://github-windows.s3.amazonaws.com/GitHub.application加成https，之后，在IE上打开
+https://github-windows.s3.amazonaws.com/GitHub.application进行安装

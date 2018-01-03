@@ -1,0 +1,46 @@
+xj@Christine MINGW64 ~ (master)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/xj/.ssh/id_rsa):
+Created directory '/c/Users/xj/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/xj/.ssh/id_rsa.
+Your public key has been saved in /c/Users/xj/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:EaLwHwvsmhSK6qoB1CeIKgsbzMjhUDVtc3Obo2/PX30 xj@Christine
+The key's randomart image is:
++---[RSA 2048]----+
+|  o.o.. .        |
+|..o+ o+.o..      |
+|o+.o=o.o.o o     |
+|@..ooo o .+      |
+|X=. . o S. .     |
+|== o    .       .|
+|= o      .      E|
+|..        o.   ..|
+|=.       . .o..  |
++----[SHA256]-----+
+
+xj@Christine MINGW64 ~ (master)
+$ cat ~/.ssh/is_rsa.pub
+cat: /c/Users/xj/.ssh/is_rsa.pub: No such file or directory
+
+xj@Christine MINGW64 ~ (master)
+$ ssh-add ~/.ssh/id_rsa
+Could not open a connection to your authentication agent.
+
+xj@Christine MINGW64 ~ (master)
+$ ssh -T git@github.com
+The authenticity of host 'github.com (192.30.252.129)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.252.129' (RSA) to the list of known hosts.
+Hi 7jx! You've successfully authenticated, but GitHub does not provide shell access.
+
+xj@Christine MINGW64 ~ (master)
+$ ssh -VT git@github.com
+OpenSSH_6.9p1, OpenSSL 1.0.2d 9 Jul 2015
+
+xj@Christine MINGW64 ~ (master)
+$
